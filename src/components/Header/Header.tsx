@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from './Header.module.css';
+import logo from '../../assets/images/logo-M.svg';
 
 const Header = () => {
     const location = useLocation();
@@ -9,7 +10,12 @@ const Header = () => {
 
     return (
         <header className={styles.header}>
-            <div className={styles.logo}>Max Barros</div>
+            <Link to='/'>
+                <img className={styles.logo}
+                    src={logo}
+                    alt="Max Barros Logo"
+                />
+            </Link>
 
             <nav className={styles.nav}>
                 <div className={styles.leftNav}>

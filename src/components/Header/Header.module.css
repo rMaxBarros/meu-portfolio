@@ -12,8 +12,12 @@
 
 .logo {
     color: var(--text-active);
-    font-size: 1.5rem;
     font-weight: bold;
+    width: 2.7rem;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 .nav {
