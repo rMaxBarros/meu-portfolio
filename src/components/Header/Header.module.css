@@ -60,3 +60,9 @@
 .contactNav {
     margin-left: 2rem;
 }
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+}
