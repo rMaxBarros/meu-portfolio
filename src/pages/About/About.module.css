@@ -2,11 +2,26 @@
     height: calc(100vh - 5rem);
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--text-active);
 }
 
 .title {
     color: var(--text-active);
     font-size: 2.5rem;
+}
+
+.button {
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    color: var(--text-active);
+    background-color: var(--highlight-color);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
 }
