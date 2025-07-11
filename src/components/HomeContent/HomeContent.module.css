@@ -5,6 +5,10 @@
     height: calc(100vh - 5rem);
     min-width: 65%;
     padding: 0 4rem;
+    background-image: url(../../assets/images/background-blurs.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: contain;
 }
 
 .textContent {
