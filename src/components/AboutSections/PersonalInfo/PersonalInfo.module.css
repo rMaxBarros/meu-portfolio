@@ -1,0 +1,14 @@
+.section {
+    color: var(--text-inactive);
+}
+
+.title {
+    color: var(--text-active);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.comment {
+    font-family: 'Fira Code', monospace;
+    margin: 0.2rem 0;
+}

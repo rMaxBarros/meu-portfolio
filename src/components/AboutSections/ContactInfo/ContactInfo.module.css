@@ -1,0 +1,24 @@
+.section {
+    color: var(--text-inactive);
+}
+
+.title {
+    color: var(--text-active);
+    font-size: 1.25rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.comment {
+    font-family: 'Fira Code', monospace;
+    margin: 0.2rem 0;
+}
+
+.comment a {
+    color: var(--text-inactive);
+    text-decoration: none;
+}
+
+.comment a:hover {
+    transition: 1000ms;
+    color: var(--text-active);
+}

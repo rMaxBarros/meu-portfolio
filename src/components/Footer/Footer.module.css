@@ -25,7 +25,7 @@
     transition: transform 0.3s;
 }
 
-.iconLink:hover {
+svg {
     transform: scale(1.2);
 }
 

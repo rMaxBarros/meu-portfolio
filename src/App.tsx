@@ -7,8 +7,8 @@ import Footer from './components/Footer/Footer';
 const AppContent = () => {
   const location = useLocation();
 
-  // Exibe o footer em todas as páginas, exceto em /contact
-  const hideFooter = location.pathname === '/contact';
+  // Exibe o footer apenas na home
+  const hideFooter = location.pathname === '/contact' || location.pathname === '/projects' || location.pathname === '/about';
 
   return (
     <>
