@@ -11,8 +11,8 @@ const Contact = () => {
 
             <section className={styles.contactInfo}>
                 <div className={styles.item}>
-                    <MdEmail className={styles.icon} />
-                    <a className={styles.sendEmail} href="mailto:rmaxbarros@gmail.com">Envie um e-mail</a>
+                    <a className={styles.sendEmail} href="mailto:rmaxbarros@gmail.com">
+                        <MdEmail className={styles.icon} /> Envie um e-mail</a>
                 </div>
             </section>
 
@@ -20,36 +20,33 @@ const Contact = () => {
 
             <section className={styles.links}>
                 <div className={styles.linkItem}>
-                    <FaLinkedin className={styles.icon} />
                     <a
                         href="https://linkedin.com/in/max-barros"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.social}
                     >
-                        LinkedIn
+                        <FaLinkedin className={styles.icon} /> LinkedIn
                     </a>
                 </div>
                 <div className={styles.linkItem}>
-                    <FaSquareGithub className={styles.icon} />
                     <a
-                        href="https://github.com/seuusuario"
+                        href="https://github.com/rMaxBarros"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.social}
                     >
-                        GitHub
+                        <FaSquareGithub className={styles.icon} /> GitHub
                     </a>
                 </div>
                 <div className={styles.linkItem}>
-                    <FaSquareInstagram className={styles.icon} />
                     <a
-                        href="https://instagram.com/seuusuario"
+                        href="https://instagram.com/MaxLoam"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.social}
                     >
-                        Instagram
+                        <FaSquareInstagram className={styles.icon} /> Instagram
                     </a>
                 </div>
             </section>

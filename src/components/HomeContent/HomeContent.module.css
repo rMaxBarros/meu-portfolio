@@ -39,7 +39,10 @@
     color: var(--text-inactive);
     font-size: 1rem;
     min-width: 650px;
-    /* max-width: 600px; */
+}
+
+.mobileMessage {
+    display: none;
 }
 
 .textConst {
@@ -52,6 +55,15 @@
 
 .textLinkedInURL {
     color: var(--link-keyword-color);
+}
+
+.linkLinkedin {
+    text-decoration: underline;
+}
+
+.linkLinkedin:hover {
+    cursor: -moz-zoom-in;
+    color: rgb(163, 92, 100)
 }
 
 .imageContainer {
@@ -83,6 +95,12 @@
     }
 
     .description {
+        display: none;
+    }
+
+    .mobileMessage {
+        display: block;
+        color: var(--text-inactive);
         font-size: 0.9rem;
         width: 30%;
         text-wrap: wrap;

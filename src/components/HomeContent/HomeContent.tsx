@@ -1,4 +1,5 @@
 import styles from './HomeContent.module.css';
+import { motion } from 'framer-motion';
 import codeSnippetsImage from '../../assets/images/code-snippets.png';
 
 const HomeContent = () => {
@@ -6,7 +7,19 @@ const HomeContent = () => {
         <section className={styles.container}>
             <div className={styles.textContent}>
                 <h3 className={styles.startTitle}>Olá, eu sou o</h3>
-                <h1 className={styles.title}>Max Barros</h1>
+
+                <motion.h1
+                    className={styles.title}
+                    animate={{ scale: [1, 1.05, 1] }}
+                    transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        repeatType: "reverse"
+                    }}
+                >
+                    Max Barros
+                </motion.h1>
+
                 <h2 className={styles.subtitle}>&gt; Engenheiro de Software</h2>
                 <h2 className={styles.subtitle}>&gt; Desenvolvedor Front-End</h2>
                 <p className={styles.description}>
@@ -15,6 +28,8 @@ const HomeContent = () => {
                 <p className={styles.description}>
                     // Bora lá?! :)
                 </p>
+                <p className={styles.mobileMessage}>// Para dar uma olhada na versão completa do site, acesse por um disposito com tela maior.</p>
+                <p className={styles.mobileMessage}>// Aperte abaixo para entrar em contato comigo no LinkedIn!</p>
                 <p className={styles.linkedInHome}>
                     <span className={styles.textConst}>const</span>
                     <span className={styles.textContactMe}> contactMe</span>
@@ -23,7 +38,7 @@ const HomeContent = () => {
                         href='https://linkedin.com/in/max-barros'
                         target='_blank'
                     >
-                        “https://linkedin.com/in/max-barros”
+                        “<span className={styles.linkLinkedin}>https://linkedin.com/in/max-barros</span>”
                     </a>
                     ;
                 </p>
@@ -32,7 +47,7 @@ const HomeContent = () => {
             <div className={styles.imageContainer}>
                 <img
                     src={codeSnippetsImage}
-                    alt='Code illustration'
+                    alt='Imagem mostrando várias linhas de código'
                     className={styles.image}
                 />
             </div>

@@ -19,17 +19,17 @@ const Header = () => {
 
             <nav className={styles.nav}>
                 <div className={styles.leftNav}>
-                    <NavItem to="/" label="home" active={isActive('/')} />
-                    <NavItem to="/about" label="about me" active={isActive('/about')} />
+                    <NavItem to="/" label="Início" active={isActive('/')} />
+                    <NavItem to="/about" label="SOBRE MIM" active={isActive('/about')} />
                     <NavItem
                         to="/projects"
-                        label="my projects"
+                        label="Meus Projetos"
                         active={isActive('/projects')}
                     />
                 </div>
                 <NavItem
                     to="/contact"
-                    label="contact"
+                    label="Entre em contato"
                     active={isActive('/contact')}
                     extraClass={styles.contactNav}
                 />

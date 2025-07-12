@@ -67,6 +67,12 @@ a {
     transform: scale(1.7);
 }
 
+.social,
+.sendEmail {
+    display: flex;
+    gap: 0.6rem;
+}
+
 .icon:hover,
 .social:hover,
 .sendEmail:hover {
