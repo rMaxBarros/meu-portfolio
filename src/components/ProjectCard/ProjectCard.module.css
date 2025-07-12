@@ -1,0 +1,69 @@
+.card {
+    border: 1px solid var(--text-inactive);
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.02);
+    min-height: 100px;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title {
+    color: var(--highlight-color);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.year {
+    font-size: 0.9rem;
+    color: var(--text-inactive);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-active);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 1rem;
+}
+
+.icon:hover {
+    color: var(--accent-color);
+    transform: scale(1.7);
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+.link span:hover {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
+.descriptionBox {
+    background-color: var(--card-color);
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--text-inactive);
+}
+
+.code {
+    font-family: 'Fira Code', monospace;
+    color: var(--text-inactive);
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+}
